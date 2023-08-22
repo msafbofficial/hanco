@@ -1,0 +1,104 @@
+#provide{
+  background-color: #121212;
+  position: relative;
+}
+
+
+.provide-head{
+    h2{
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 56px;
+        letter-spacing: 0.07em;
+        color: #FFFFFF;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 12px;
+            left: 229px;
+            width: 100px;
+            height: 2px;
+            background-color: #FF4655;
+        }
+    }
+}
+
+.prov-item{
+    background-color: #212121;
+   padding: 20px 0;
+   margin: 0 10px;
+    .prov-img{
+        
+        h2{
+            
+                font-family: 'Oswald';
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 59px;
+                text-align: center;
+                letter-spacing: 0.01em;
+
+                color: #FFFFFF;
+        }
+
+        img{
+            padding: 0px 50px;
+        }
+
+        h4{
+            font-family: 'Oswald';
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 37px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        p{
+            
+            font-family: 'Oswald';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FF4655;
+        }
+    }
+}
+
+.a{
+    position: absolute;
+    content: "";
+    top: 60%;
+    left: 96px;
+    color: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    background-color: #FF4655;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    z-index: 11;
+}
+
+.b{
+
+    position: absolute;
+    content: "";
+    top: 60%;
+    right: 96px;
+    color: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    background-color: #FF4655;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    z-index: 11;
+}

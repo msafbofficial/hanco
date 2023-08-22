@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- fornt google  -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/kursor.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+
+  <!-- preloder part start -->
+  <div id="preloader">
+   
+  </div>
+    
+    <!-- nav part start  -->
+ 
+
+    <nav class="navbar navbar-expand-lg navbar-light menu-bg">
+      <div class="progress-bar-wrapper"><div class="progress"></div></div>
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <div class="logo">
+              <span>
+                <svg width="99" height="26" viewBox="0 0 99 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.325 0.919999C9.325 0.803333 9.36 0.709999 9.43 0.639999C9.52333 0.546665 9.62833 0.499998 9.745 0.499998H13.84C13.9567 0.499998 14.05 0.546665 14.12 0.639999C14.2133 0.709999 14.26 0.803333 14.26 0.919999V24.58C14.26 24.6967 14.2133 24.8017 14.12 24.895C14.05 24.965 13.9567 25 13.84 25H9.745C9.62833 25 9.52333 24.965 9.43 24.895C9.36 24.8017 9.325 24.6967 9.325 24.58V15.025C9.325 14.9083 9.26667 14.85 9.15 14.85H5.65C5.53333 14.85 5.475 14.9083 5.475 15.025V24.58C5.475 24.6967 5.42833 24.8017 5.335 24.895C5.265 24.965 5.17167 25 5.055 25H0.96C0.843333 25 0.738333 24.965 0.645 24.895C0.575 24.8017 0.54 24.6967 0.54 24.58V0.919999C0.54 0.803333 0.575 0.709999 0.645 0.639999C0.738333 0.546665 0.843333 0.499998 0.96 0.499998H5.055C5.17167 0.499998 5.265 0.546665 5.335 0.639999C5.42833 0.709999 5.475 0.803333 5.475 0.919999V10.44C5.475 10.5567 5.53333 10.615 5.65 10.615H9.15C9.26667 10.615 9.325 10.5567 9.325 10.44V0.919999ZM24.7064 6.73C26.6897 6.73 28.2997 7.26667 29.5364 8.34C30.7731 9.41333 31.3914 10.825 31.3914 12.575V24.58C31.3914 24.6967 31.3447 24.8017 31.2514 24.895C31.1814 24.965 31.0881 25 30.9714 25H26.8764C26.7597 25 26.6547 24.965 26.5614 24.895C26.4914 24.8017 26.4564 24.6967 26.4564 24.58V23.81C26.4564 23.74 26.4331 23.6933 26.3864 23.67C26.3397 23.6467 26.2931 23.67 26.2464 23.74C25.4764 24.72 24.2864 25.2333 22.6764 25.28C21.3231 25.28 20.1447 24.9067 19.1414 24.16C18.1614 23.4133 17.6714 21.99 17.6714 19.89C17.6714 17.72 18.2664 16.2267 19.4564 15.41C20.6697 14.5933 22.4081 14.185 24.6714 14.185H26.2814C26.3981 14.185 26.4564 14.1267 26.4564 14.01V13.135C26.4564 12.505 26.2814 11.9917 25.9314 11.595C25.6047 11.175 25.1847 10.965 24.6714 10.965C24.2747 10.965 23.9364 11.0933 23.6564 11.35C23.3997 11.5833 23.2364 11.9217 23.1664 12.365C23.1431 12.645 22.9914 12.785 22.7114 12.785L18.5114 12.75C18.2314 12.75 18.0914 12.61 18.0914 12.33C18.2081 10.6267 18.8731 9.27333 20.0864 8.27C21.2997 7.24333 22.8397 6.73 24.7064 6.73ZM24.3564 21.465C24.8931 21.465 25.3714 21.29 25.7914 20.94C26.2347 20.5667 26.4564 20.0767 26.4564 19.47V17.825C26.4564 17.7083 26.3981 17.65 26.2814 17.65H24.8464C24.2164 17.65 23.7031 17.8367 23.3064 18.21C22.9331 18.56 22.7464 19.05 22.7464 19.68C22.7464 20.2633 22.8864 20.7067 23.1664 21.01C23.4697 21.3133 23.8664 21.465 24.3564 21.465ZM43.2315 6.73C44.8182 6.73 46.0082 7.255 46.8015 8.305C47.5949 9.355 47.9915 10.825 47.9915 12.715V24.58C47.9915 24.6967 47.9449 24.8017 47.8515 24.895C47.7815 24.965 47.6882 25 47.5715 25H43.4765C43.3599 25 43.2549 24.965 43.1615 24.895C43.0915 24.8017 43.0565 24.6967 43.0565 24.58V13.1C43.0565 12.4233 42.9165 11.8983 42.6365 11.525C42.3799 11.1517 41.9949 10.965 41.4815 10.965C40.9449 10.965 40.5249 11.1633 40.2215 11.56C39.9415 11.9333 39.8015 12.47 39.8015 13.17V24.58C39.8015 24.6967 39.7549 24.8017 39.6615 24.895C39.5915 24.965 39.4982 25 39.3815 25H35.2865C35.1699 25 35.0649 24.965 34.9715 24.895C34.9015 24.8017 34.8665 24.6967 34.8665 24.58V7.43C34.8665 7.31333 34.9015 7.22 34.9715 7.15C35.0649 7.05667 35.1699 7.01 35.2865 7.01H39.3815C39.4982 7.01 39.5915 7.05667 39.6615 7.15C39.7549 7.22 39.8015 7.31333 39.8015 7.43V8.095C39.8015 8.165 39.8249 8.2 39.8715 8.2C39.9415 8.2 40.0232 8.15333 40.1165 8.06C40.8632 7.17333 41.9015 6.73 43.2315 6.73ZM57.9408 25.28C55.8875 25.28 54.2658 24.755 53.0758 23.705C51.9092 22.655 51.3258 21.22 51.3258 19.4V12.61C51.3258 10.8367 51.9092 9.41333 53.0758 8.34C54.2658 7.26667 55.8875 6.73 57.9408 6.73C59.9942 6.73 61.6042 7.255 62.7708 8.305C63.9608 9.355 64.5558 10.72 64.5558 12.4V13.03C64.5558 13.1467 64.5092 13.2517 64.4158 13.345C64.3458 13.415 64.2525 13.45 64.1358 13.45L60.0408 13.625C59.7608 13.625 59.6208 13.485 59.6208 13.205V12.785C59.6208 12.2717 59.4575 11.84 59.1308 11.49C58.8275 11.14 58.4308 10.965 57.9408 10.965C57.4275 10.965 57.0192 11.1517 56.7158 11.525C56.4125 11.8983 56.2608 12.3883 56.2608 12.995V19.015C56.2608 19.6217 56.4125 20.1117 56.7158 20.485C57.0192 20.8583 57.4275 21.045 57.9408 21.045C58.4308 21.045 58.8275 20.87 59.1308 20.52C59.4575 20.1467 59.6208 19.715 59.6208 19.225V18.77C59.6208 18.6533 59.6558 18.56 59.7258 18.49C59.8192 18.3967 59.9242 18.35 60.0408 18.35L64.1358 18.385C64.2525 18.385 64.3458 18.4317 64.4158 18.525C64.5092 18.595 64.5558 18.6883 64.5558 18.805V19.61C64.5558 21.3367 63.9608 22.7133 62.7708 23.74C61.6042 24.7667 59.9942 25.28 57.9408 25.28ZM74.2016 25.28C72.1249 25.28 70.4916 24.755 69.3016 23.705C68.1349 22.655 67.5516 21.22 67.5516 19.4V12.61C67.5516 10.8367 68.1466 9.41333 69.3366 8.34C70.5266 7.26667 72.1483 6.73 74.2016 6.73C76.2783 6.73 77.9116 7.26667 79.1016 8.34C80.2916 9.41333 80.8866 10.8367 80.8866 12.61V19.4C80.8866 21.22 80.2916 22.655 79.1016 23.705C77.9349 24.755 76.3016 25.28 74.2016 25.28ZM74.2016 21.01C74.7149 21.01 75.1349 20.8233 75.4616 20.45C75.7883 20.0767 75.9516 19.5983 75.9516 19.015V12.96C75.9516 12.3767 75.7883 11.8983 75.4616 11.525C75.1349 11.1517 74.7149 10.965 74.2016 10.965C73.6883 10.965 73.2683 11.1517 72.9416 11.525C72.6383 11.8983 72.4866 12.3767 72.4866 12.96V19.015C72.4866 19.5983 72.6383 20.0767 72.9416 20.45C73.2683 20.8233 73.6883 21.01 74.2016 21.01ZM84.75 25C84.6333 25 84.5283 24.965 84.435 24.895C84.365 24.8017 84.33 24.6967 84.33 24.58V0.919999C84.33 0.803333 84.365 0.709999 84.435 0.639999C84.5283 0.546665 84.6333 0.499998 84.75 0.499998H88.845C88.9617 0.499998 89.055 0.546665 89.125 0.639999C89.2183 0.709999 89.265 0.803333 89.265 0.919999V12.505C89.265 12.5983 89.2883 12.6567 89.335 12.68C89.3817 12.68 89.4283 12.645 89.475 12.575L92.52 7.29C92.6133 7.10333 92.7883 7.01 93.045 7.01H97.245C97.4083 7.01 97.5133 7.05667 97.56 7.15C97.63 7.24333 97.6183 7.36 97.525 7.5L93.745 13.38C93.6983 13.4733 93.6867 13.555 93.71 13.625L97.98 24.51C98.0033 24.5567 98.015 24.615 98.015 24.685C98.015 24.895 97.8867 25 97.63 25H93.395C93.1617 25 93.01 24.8833 92.94 24.65L90.7 17.72C90.6767 17.65 90.6417 17.615 90.595 17.615C90.5483 17.5917 90.5133 17.615 90.49 17.685L89.335 19.505C89.2883 19.5983 89.265 19.6683 89.265 19.715V24.58C89.265 24.6967 89.2183 24.8017 89.125 24.895C89.055 24.965 88.9617 25 88.845 25H84.75Z" fill="white"/>
+                  </svg>
+                  
+              </span>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#banner">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#video">Tornament</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sale">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+              <div class="right">
+             
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </form>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+           <!-- mobile navigation start -->
+  <header class="mobile-header">
+    <div class="container-full">
+      <div class="mobile-header__container">
+        <div class="p-left">
+          <div class="logo">
+            <span>
+              <svg width="99" height="26" viewBox="0 0 99 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.325 0.919999C9.325 0.803333 9.36 0.709999 9.43 0.639999C9.52333 0.546665 9.62833 0.499998 9.745 0.499998H13.84C13.9567 0.499998 14.05 0.546665 14.12 0.639999C14.2133 0.709999 14.26 0.803333 14.26 0.919999V24.58C14.26 24.6967 14.2133 24.8017 14.12 24.895C14.05 24.965 13.9567 25 13.84 25H9.745C9.62833 25 9.52333 24.965 9.43 24.895C9.36 24.8017 9.325 24.6967 9.325 24.58V15.025C9.325 14.9083 9.26667 14.85 9.15 14.85H5.65C5.53333 14.85 5.475 14.9083 5.475 15.025V24.58C5.475 24.6967 5.42833 24.8017 5.335 24.895C5.265 24.965 5.17167 25 5.055 25H0.96C0.843333 25 0.738333 24.965 0.645 24.895C0.575 24.8017 0.54 24.6967 0.54 24.58V0.919999C0.54 0.803333 0.575 0.709999 0.645 0.639999C0.738333 0.546665 0.843333 0.499998 0.96 0.499998H5.055C5.17167 0.499998 5.265 0.546665 5.335 0.639999C5.42833 0.709999 5.475 0.803333 5.475 0.919999V10.44C5.475 10.5567 5.53333 10.615 5.65 10.615H9.15C9.26667 10.615 9.325 10.5567 9.325 10.44V0.919999ZM24.7064 6.73C26.6897 6.73 28.2997 7.26667 29.5364 8.34C30.7731 9.41333 31.3914 10.825 31.3914 12.575V24.58C31.3914 24.6967 31.3447 24.8017 31.2514 24.895C31.1814 24.965 31.0881 25 30.9714 25H26.8764C26.7597 25 26.6547 24.965 26.5614 24.895C26.4914 24.8017 26.4564 24.6967 26.4564 24.58V23.81C26.4564 23.74 26.4331 23.6933 26.3864 23.67C26.3397 23.6467 26.2931 23.67 26.2464 23.74C25.4764 24.72 24.2864 25.2333 22.6764 25.28C21.3231 25.28 20.1447 24.9067 19.1414 24.16C18.1614 23.4133 17.6714 21.99 17.6714 19.89C17.6714 17.72 18.2664 16.2267 19.4564 15.41C20.6697 14.5933 22.4081 14.185 24.6714 14.185H26.2814C26.3981 14.185 26.4564 14.1267 26.4564 14.01V13.135C26.4564 12.505 26.2814 11.9917 25.9314 11.595C25.6047 11.175 25.1847 10.965 24.6714 10.965C24.2747 10.965 23.9364 11.0933 23.6564 11.35C23.3997 11.5833 23.2364 11.9217 23.1664 12.365C23.1431 12.645 22.9914 12.785 22.7114 12.785L18.5114 12.75C18.2314 12.75 18.0914 12.61 18.0914 12.33C18.2081 10.6267 18.8731 9.27333 20.0864 8.27C21.2997 7.24333 22.8397 6.73 24.7064 6.73ZM24.3564 21.465C24.8931 21.465 25.3714 21.29 25.7914 20.94C26.2347 20.5667 26.4564 20.0767 26.4564 19.47V17.825C26.4564 17.7083 26.3981 17.65 26.2814 17.65H24.8464C24.2164 17.65 23.7031 17.8367 23.3064 18.21C22.9331 18.56 22.7464 19.05 22.7464 19.68C22.7464 20.2633 22.8864 20.7067 23.1664 21.01C23.4697 21.3133 23.8664 21.465 24.3564 21.465ZM43.2315 6.73C44.8182 6.73 46.0082 7.255 46.8015 8.305C47.5949 9.355 47.9915 10.825 47.9915 12.715V24.58C47.9915 24.6967 47.9449 24.8017 47.8515 24.895C47.7815 24.965 47.6882 25 47.5715 25H43.4765C43.3599 25 43.2549 24.965 43.1615 24.895C43.0915 24.8017 43.0565 24.6967 43.0565 24.58V13.1C43.0565 12.4233 42.9165 11.8983 42.6365 11.525C42.3799 11.1517 41.9949 10.965 41.4815 10.965C40.9449 10.965 40.5249 11.1633 40.2215 11.56C39.9415 11.9333 39.8015 12.47 39.8015 13.17V24.58C39.8015 24.6967 39.7549 24.8017 39.6615 24.895C39.5915 24.965 39.4982 25 39.3815 25H35.2865C35.1699 25 35.0649 24.965 34.9715 24.895C34.9015 24.8017 34.8665 24.6967 34.8665 24.58V7.43C34.8665 7.31333 34.9015 7.22 34.9715 7.15C35.0649 7.05667 35.1699 7.01 35.2865 7.01H39.3815C39.4982 7.01 39.5915 7.05667 39.6615 7.15C39.7549 7.22 39.8015 7.31333 39.8015 7.43V8.095C39.8015 8.165 39.8249 8.2 39.8715 8.2C39.9415 8.2 40.0232 8.15333 40.1165 8.06C40.8632 7.17333 41.9015 6.73 43.2315 6.73ZM57.9408 25.28C55.8875 25.28 54.2658 24.755 53.0758 23.705C51.9092 22.655 51.3258 21.22 51.3258 19.4V12.61C51.3258 10.8367 51.9092 9.41333 53.0758 8.34C54.2658 7.26667 55.8875 6.73 57.9408 6.73C59.9942 6.73 61.6042 7.255 62.7708 8.305C63.9608 9.355 64.5558 10.72 64.5558 12.4V13.03C64.5558 13.1467 64.5092 13.2517 64.4158 13.345C64.3458 13.415 64.2525 13.45 64.1358 13.45L60.0408 13.625C59.7608 13.625 59.6208 13.485 59.6208 13.205V12.785C59.6208 12.2717 59.4575 11.84 59.1308 11.49C58.8275 11.14 58.4308 10.965 57.9408 10.965C57.4275 10.965 57.0192 11.1517 56.7158 11.525C56.4125 11.8983 56.2608 12.3883 56.2608 12.995V19.015C56.2608 19.6217 56.4125 20.1117 56.7158 20.485C57.0192 20.8583 57.4275 21.045 57.9408 21.045C58.4308 21.045 58.8275 20.87 59.1308 20.52C59.4575 20.1467 59.6208 19.715 59.6208 19.225V18.77C59.6208 18.6533 59.6558 18.56 59.7258 18.49C59.8192 18.3967 59.9242 18.35 60.0408 18.35L64.1358 18.385C64.2525 18.385 64.3458 18.4317 64.4158 18.525C64.5092 18.595 64.5558 18.6883 64.5558 18.805V19.61C64.5558 21.3367 63.9608 22.7133 62.7708 23.74C61.6042 24.7667 59.9942 25.28 57.9408 25.28ZM74.2016 25.28C72.1249 25.28 70.4916 24.755 69.3016 23.705C68.1349 22.655 67.5516 21.22 67.5516 19.4V12.61C67.5516 10.8367 68.1466 9.41333 69.3366 8.34C70.5266 7.26667 72.1483 6.73 74.2016 6.73C76.2783 6.73 77.9116 7.26667 79.1016 8.34C80.2916 9.41333 80.8866 10.8367 80.8866 12.61V19.4C80.8866 21.22 80.2916 22.655 79.1016 23.705C77.9349 24.755 76.3016 25.28 74.2016 25.28ZM74.2016 21.01C74.7149 21.01 75.1349 20.8233 75.4616 20.45C75.7883 20.0767 75.9516 19.5983 75.9516 19.015V12.96C75.9516 12.3767 75.7883 11.8983 75.4616 11.525C75.1349 11.1517 74.7149 10.965 74.2016 10.965C73.6883 10.965 73.2683 11.1517 72.9416 11.525C72.6383 11.8983 72.4866 12.3767 72.4866 12.96V19.015C72.4866 19.5983 72.6383 20.0767 72.9416 20.45C73.2683 20.8233 73.6883 21.01 74.2016 21.01ZM84.75 25C84.6333 25 84.5283 24.965 84.435 24.895C84.365 24.8017 84.33 24.6967 84.33 24.58V0.919999C84.33 0.803333 84.365 0.709999 84.435 0.639999C84.5283 0.546665 84.6333 0.499998 84.75 0.499998H88.845C88.9617 0.499998 89.055 0.546665 89.125 0.639999C89.2183 0.709999 89.265 0.803333 89.265 0.919999V12.505C89.265 12.5983 89.2883 12.6567 89.335 12.68C89.3817 12.68 89.4283 12.645 89.475 12.575L92.52 7.29C92.6133 7.10333 92.7883 7.01 93.045 7.01H97.245C97.4083 7.01 97.5133 7.05667 97.56 7.15C97.63 7.24333 97.6183 7.36 97.525 7.5L93.745 13.38C93.6983 13.4733 93.6867 13.555 93.71 13.625L97.98 24.51C98.0033 24.5567 98.015 24.615 98.015 24.685C98.015 24.895 97.8867 25 97.63 25H93.395C93.1617 25 93.01 24.8833 92.94 24.65L90.7 17.72C90.6767 17.65 90.6417 17.615 90.595 17.615C90.5483 17.5917 90.5133 17.615 90.49 17.685L89.335 19.505C89.2883 19.5983 89.265 19.6683 89.265 19.715V24.58C89.265 24.6967 89.2183 24.8017 89.125 24.895C89.055 24.965 88.9617 25 88.845 25H84.75Z" fill="white"/>
+                </svg>
+                
+            </span>
+          </div>
+        </div>
+        <div class="p-right">
+          <button id="nav-opn-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- offcanvas -->
+  <aside id="offcanvas-nav">
+    <nav class="m-nav">
+      <button id="nav-cls-btn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="logo">
+        <span>
+          <svg width="99" height="26" viewBox="0 0 99 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.325 0.919999C9.325 0.803333 9.36 0.709999 9.43 0.639999C9.52333 0.546665 9.62833 0.499998 9.745 0.499998H13.84C13.9567 0.499998 14.05 0.546665 14.12 0.639999C14.2133 0.709999 14.26 0.803333 14.26 0.919999V24.58C14.26 24.6967 14.2133 24.8017 14.12 24.895C14.05 24.965 13.9567 25 13.84 25H9.745C9.62833 25 9.52333 24.965 9.43 24.895C9.36 24.8017 9.325 24.6967 9.325 24.58V15.025C9.325 14.9083 9.26667 14.85 9.15 14.85H5.65C5.53333 14.85 5.475 14.9083 5.475 15.025V24.58C5.475 24.6967 5.42833 24.8017 5.335 24.895C5.265 24.965 5.17167 25 5.055 25H0.96C0.843333 25 0.738333 24.965 0.645 24.895C0.575 24.8017 0.54 24.6967 0.54 24.58V0.919999C0.54 0.803333 0.575 0.709999 0.645 0.639999C0.738333 0.546665 0.843333 0.499998 0.96 0.499998H5.055C5.17167 0.499998 5.265 0.546665 5.335 0.639999C5.42833 0.709999 5.475 0.803333 5.475 0.919999V10.44C5.475 10.5567 5.53333 10.615 5.65 10.615H9.15C9.26667 10.615 9.325 10.5567 9.325 10.44V0.919999ZM24.7064 6.73C26.6897 6.73 28.2997 7.26667 29.5364 8.34C30.7731 9.41333 31.3914 10.825 31.3914 12.575V24.58C31.3914 24.6967 31.3447 24.8017 31.2514 24.895C31.1814 24.965 31.0881 25 30.9714 25H26.8764C26.7597 25 26.6547 24.965 26.5614 24.895C26.4914 24.8017 26.4564 24.6967 26.4564 24.58V23.81C26.4564 23.74 26.4331 23.6933 26.3864 23.67C26.3397 23.6467 26.2931 23.67 26.2464 23.74C25.4764 24.72 24.2864 25.2333 22.6764 25.28C21.3231 25.28 20.1447 24.9067 19.1414 24.16C18.1614 23.4133 17.6714 21.99 17.6714 19.89C17.6714 17.72 18.2664 16.2267 19.4564 15.41C20.6697 14.5933 22.4081 14.185 24.6714 14.185H26.2814C26.3981 14.185 26.4564 14.1267 26.4564 14.01V13.135C26.4564 12.505 26.2814 11.9917 25.9314 11.595C25.6047 11.175 25.1847 10.965 24.6714 10.965C24.2747 10.965 23.9364 11.0933 23.6564 11.35C23.3997 11.5833 23.2364 11.9217 23.1664 12.365C23.1431 12.645 22.9914 12.785 22.7114 12.785L18.5114 12.75C18.2314 12.75 18.0914 12.61 18.0914 12.33C18.2081 10.6267 18.8731 9.27333 20.0864 8.27C21.2997 7.24333 22.8397 6.73 24.7064 6.73ZM24.3564 21.465C24.8931 21.465 25.3714 21.29 25.7914 20.94C26.2347 20.5667 26.4564 20.0767 26.4564 19.47V17.825C26.4564 17.7083 26.3981 17.65 26.2814 17.65H24.8464C24.2164 17.65 23.7031 17.8367 23.3064 18.21C22.9331 18.56 22.7464 19.05 22.7464 19.68C22.7464 20.2633 22.8864 20.7067 23.1664 21.01C23.4697 21.3133 23.8664 21.465 24.3564 21.465ZM43.2315 6.73C44.8182 6.73 46.0082 7.255 46.8015 8.305C47.5949 9.355 47.9915 10.825 47.9915 12.715V24.58C47.9915 24.6967 47.9449 24.8017 47.8515 24.895C47.7815 24.965 47.6882 25 47.5715 25H43.4765C43.3599 25 43.2549 24.965 43.1615 24.895C43.0915 24.8017 43.0565 24.6967 43.0565 24.58V13.1C43.0565 12.4233 42.9165 11.8983 42.6365 11.525C42.3799 11.1517 41.9949 10.965 41.4815 10.965C40.9449 10.965 40.5249 11.1633 40.2215 11.56C39.9415 11.9333 39.8015 12.47 39.8015 13.17V24.58C39.8015 24.6967 39.7549 24.8017 39.6615 24.895C39.5915 24.965 39.4982 25 39.3815 25H35.2865C35.1699 25 35.0649 24.965 34.9715 24.895C34.9015 24.8017 34.8665 24.6967 34.8665 24.58V7.43C34.8665 7.31333 34.9015 7.22 34.9715 7.15C35.0649 7.05667 35.1699 7.01 35.2865 7.01H39.3815C39.4982 7.01 39.5915 7.05667 39.6615 7.15C39.7549 7.22 39.8015 7.31333 39.8015 7.43V8.095C39.8015 8.165 39.8249 8.2 39.8715 8.2C39.9415 8.2 40.0232 8.15333 40.1165 8.06C40.8632 7.17333 41.9015 6.73 43.2315 6.73ZM57.9408 25.28C55.8875 25.28 54.2658 24.755 53.0758 23.705C51.9092 22.655 51.3258 21.22 51.3258 19.4V12.61C51.3258 10.8367 51.9092 9.41333 53.0758 8.34C54.2658 7.26667 55.8875 6.73 57.9408 6.73C59.9942 6.73 61.6042 7.255 62.7708 8.305C63.9608 9.355 64.5558 10.72 64.5558 12.4V13.03C64.5558 13.1467 64.5092 13.2517 64.4158 13.345C64.3458 13.415 64.2525 13.45 64.1358 13.45L60.0408 13.625C59.7608 13.625 59.6208 13.485 59.6208 13.205V12.785C59.6208 12.2717 59.4575 11.84 59.1308 11.49C58.8275 11.14 58.4308 10.965 57.9408 10.965C57.4275 10.965 57.0192 11.1517 56.7158 11.525C56.4125 11.8983 56.2608 12.3883 56.2608 12.995V19.015C56.2608 19.6217 56.4125 20.1117 56.7158 20.485C57.0192 20.8583 57.4275 21.045 57.9408 21.045C58.4308 21.045 58.8275 20.87 59.1308 20.52C59.4575 20.1467 59.6208 19.715 59.6208 19.225V18.77C59.6208 18.6533 59.6558 18.56 59.7258 18.49C59.8192 18.3967 59.9242 18.35 60.0408 18.35L64.1358 18.385C64.2525 18.385 64.3458 18.4317 64.4158 18.525C64.5092 18.595 64.5558 18.6883 64.5558 18.805V19.61C64.5558 21.3367 63.9608 22.7133 62.7708 23.74C61.6042 24.7667 59.9942 25.28 57.9408 25.28ZM74.2016 25.28C72.1249 25.28 70.4916 24.755 69.3016 23.705C68.1349 22.655 67.5516 21.22 67.5516 19.4V12.61C67.5516 10.8367 68.1466 9.41333 69.3366 8.34C70.5266 7.26667 72.1483 6.73 74.2016 6.73C76.2783 6.73 77.9116 7.26667 79.1016 8.34C80.2916 9.41333 80.8866 10.8367 80.8866 12.61V19.4C80.8866 21.22 80.2916 22.655 79.1016 23.705C77.9349 24.755 76.3016 25.28 74.2016 25.28ZM74.2016 21.01C74.7149 21.01 75.1349 20.8233 75.4616 20.45C75.7883 20.0767 75.9516 19.5983 75.9516 19.015V12.96C75.9516 12.3767 75.7883 11.8983 75.4616 11.525C75.1349 11.1517 74.7149 10.965 74.2016 10.965C73.6883 10.965 73.2683 11.1517 72.9416 11.525C72.6383 11.8983 72.4866 12.3767 72.4866 12.96V19.015C72.4866 19.5983 72.6383 20.0767 72.9416 20.45C73.2683 20.8233 73.6883 21.01 74.2016 21.01ZM84.75 25C84.6333 25 84.5283 24.965 84.435 24.895C84.365 24.8017 84.33 24.6967 84.33 24.58V0.919999C84.33 0.803333 84.365 0.709999 84.435 0.639999C84.5283 0.546665 84.6333 0.499998 84.75 0.499998H88.845C88.9617 0.499998 89.055 0.546665 89.125 0.639999C89.2183 0.709999 89.265 0.803333 89.265 0.919999V12.505C89.265 12.5983 89.2883 12.6567 89.335 12.68C89.3817 12.68 89.4283 12.645 89.475 12.575L92.52 7.29C92.6133 7.10333 92.7883 7.01 93.045 7.01H97.245C97.4083 7.01 97.5133 7.05667 97.56 7.15C97.63 7.24333 97.6183 7.36 97.525 7.5L93.745 13.38C93.6983 13.4733 93.6867 13.555 93.71 13.625L97.98 24.51C98.0033 24.5567 98.015 24.615 98.015 24.685C98.015 24.895 97.8867 25 97.63 25H93.395C93.1617 25 93.01 24.8833 92.94 24.65L90.7 17.72C90.6767 17.65 90.6417 17.615 90.595 17.615C90.5483 17.5917 90.5133 17.615 90.49 17.685L89.335 19.505C89.2883 19.5983 89.265 19.6683 89.265 19.715V24.58C89.265 24.6967 89.2183 24.8017 89.125 24.895C89.055 24.965 88.9617 25 88.845 25H84.75Z" fill="white"/>
+            </svg>
+            
+        </span>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown"><a href="index.html">Home</a> 
+        
+        
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="service.html">Pages</i></a>
+        </li>
+        <li><a href="protfolio.html">Portfolio</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li >
+          <a href="blog.html">Blog</i></a>
+        </li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+      <div class=" m-right">
+             
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </form>
+      </div>
+    </nav>
+  </aside>
+
+
+    <!-- nav part end -->
+
+
+    <!-- banner part start -->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="banner-text">
+                        <h5 data-aos="fade-up"  data-aos-delay="100" data-aos-duration="1000" >LIFE TIME</h5>
+                        <h1 data-aos="fade-up"  data-aos-delay="200" data-aos-duration="1000">GAMING EXPERIENCE</h1>
+                        <p data-aos="fade-up"  data-aos-delay="300" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias voluptas optio. 
+                            Veritatis recusandae pariatur qui dignissimos dolore similique ad adipisci eum. Quos 
+                            aliquid fugiat magni illum eius?</p>
+                    </div>
+                    <div class="banner-btn" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="1000">
+                        <a href="#">View More <span><img src="images/Vector.svg" alt=""></span></a>
+                    </div>
+                    
+                    <div class="banner-icon">
+                      <i class="fa-brands fa-facebook-f" data-aos="fade-up"  data-aos-delay="100" data-aos-duration="1000"></i>
+                      <i class="fa-brands fa-linkedin-in" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="1000"></i>
+                      <i class="fa-brands fa-twitter" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="1000"></i>
+                      <i class="fa-brands fa-instagram" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="1000"></i>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part end -->
+    
+    <!-- about part start -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-head">
+              <h2 data-aos="fade-right"  data-aos-delay="400" data-aos-duration="1000" >ABOUT THE BIGGEST HANCOK 
+                COMMUNITY</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <div class="about-img" data-aos="flip-up" data-aos-duration="1000" >
+              <img src="images/img.png" class="w-100" alt="about">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-text" data-aos="fade-left" data-aos-duration="1000" >
+              <h3>MOST POPULAR GAMING PLATFORM.</h3>
+              <h5><span><i class="fa-solid fa-check"></i></span>  World Bigghest Community & Gaming Server</h5>
+              <h5><span><i class="fa-solid fa-check"></i></span> Friendly Clan & Mates</h5>
+              <h5><span><i class="fa-solid fa-check"></i></span> We Provide Gaming Accesories</h5>
+              <h5><span><i class="fa-solid fa-check"></i></span> Largest Online Gaming Community & Shop</h5>
+              <h5><span><i class="fa-solid fa-check"></i></span> Hancok reaches more than 150 million monthly users</h5>
+              <h5><span><i class="fa-solid fa-check"></i></span> We are leading global media brand for games</h5>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo sed odio 
+                temporibus magni quia eveniet odit placeat repellat quod ipsum modi 
+                necessitatibus, dolorum officia!</p>
+            </div>
+            <div class="about-btn" data-aos="fade-up-left" data-aos-duration="1000" >
+              <a href="#">View More <span><i class="fa-solid fa-angles-right"></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 col-sm-6">
+          <div class="about-item" data-aos="fade-right"  data-aos-delay="100" data-aos-duration="1000"  >
+            <div class="about-btm">
+              <div class="about-btm-tex text-center">
+                <h2> <span class="counter">112</span>k</h2>
+                <p>Community Earning</p>
+              </div>
+          </div>
+          </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="about-item" data-aos="fade-right"  data-aos-delay="200" data-aos-duration="1000" >
+            <div class="about-btm">
+              <div class="about-btm-tex text-center">
+                <h2> <span class="counter">12</span>M</h2>
+                <p>Total Member</p>
+              </div>
+          </div>
+          </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="about-item" data-aos="fade-right"  data-aos-delay="300" data-aos-duration="1000" >
+            <div class="about-btm">
+              <div class="about-btm-tex text-center">
+                <h2><span class="counter">100</span>k</h2>
+                <p>Streams Complete</p>
+              </div>
+          </div>
+          </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+          <div class="about-item" data-aos="fade-right"  data-aos-delay="400" data-aos-duration="1000" >
+            <div class="about-btm">
+              <div class="about-btm-tex text-center">
+                <h2 class="counter">800</h2>
+                <p>Total Sponsers</p>
+              </div>
+          </div>
+          </div>
+          </div>
+      
+        </div>
+      </div>
+    </section>
+    <!-- about part end -->
+
+
+    <!-- populer part start -->
+    <section id="popilar" class="py-5">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-6">
+            <div class="popular-head text-end" data-aos="fade-left" data-aos-duration="1000" >
+              <h2>POPULAR GAMES AROUND THE
+                WORLD</h2>
+            </div>
+          </div>
+        </div>
+
+     
+<div class="populer-icon">
+  <i class="fa-solid fa-angle-left next" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"></i>
+  <i class="fa-solid fa-angle-right prev" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"></i>
+</div>
+
+        <div class="row one mt-4">
+          <div class="col-lg-6">
+        
+            <div class="populer-item">
+                <div class="popular-img"  data-aos="flip-up" data-aos-duration="1000" >
+                  <img src="images/trend-games3 1.png" class="w-100"  alt="trend">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="populer-item">
+              <div class="popular-img" data-aos="flip-right" data-aos-duration="1000" >
+                <img src="images/trend-games3 1.png" class="w-100" alt="trend">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="populer-item">
+              <div class="popular-img">
+                <img src="images/trend-games3 1.png" class="w-100" alt="trend">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- populer part end -->
+
+    <!-- video part start -->
+    <section id="video" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="vedio-head" data-aos="fade-right"  data-aos-duration="1000" >
+              <h2>LIVE STREAMIN VIDEO BY 
+                HANCOK</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row vedio-slick mt-5">
+          <div class="col-lg-4">
+            <div class="vedio-img">
+              <img src="images/tour-1 1.svg" class="w-100" alt="tour">
+                <div class="vedio-overlay">
+                  <a class="venobox" href="images/1.gif"><i class="fa-solid fa-play"></i></a>
+                  
+                  <h4>HORIZON ZERO | DAWN</h4>
+                  <h6>Guerrilla Games</h6>
+                  <h5>LIVE</h5>
+                  <span></span>
+                </div>
+            </div>
+          </div> 
+          <div class="col-lg-4">
+            <div class="vedio-img">
+              <img src="images/tour-3 1.svg" class="w-100" alt="tour">
+                <div class="vedio-overlay">
+                  <a class="venobox" href="images/1.gif"><i class="fa-solid fa-play"></i></a>
+                  
+                  <h4>HORIZON ZERO | DAWN</h4>
+                  <h6>Guerrilla Games</h6>
+                  <h5>LIVE</h5>
+                  <span></span>
+                </div>
+            </div>
+          </div> 
+          <div class="col-lg-4">
+            <div class="vedio-img game">
+              <img src="images/tour-1 1.svg" class="w-100" alt="tour">
+                <div class="vedio-overlay">
+                  <a class="venobox" href="images/1.gif"><i class="fa-solid fa-play"></i></a>
+                  
+                  <h4>HORIZON ZERO | DAWN</h4>
+                  <h6>Guerrilla Games</h6>
+                  <h5>LIVE</h5>
+                  <span></span>
+                </div>
+            </div>
+          </div> 
+          <div class="col-lg-4">
+            <div class="vedio-img game">
+              <img src="images/tour-3 1.svg" class="w-100" alt="tour">
+                <div class="vedio-overlay">
+                  <a class="venobox" href="images/1.gif"><i class="fa-solid fa-play"></i></a>
+                  
+                  <h4>HORIZON ZERO | DAWN</h4>
+                  <h6>Guerrilla Games</h6>
+                  <h5>LIVE</h5>
+                  <span></span>
+                </div>
+            </div>
+          </div> 
+        </div>
+
+        <div class="row justify-content-center mt-5 ">
+          <div class="col-lg-12">
+           <div class="time text-center">
+            <h3  data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">PREVIOUS MATCHES</h3>
+           </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="macth-time" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" >
+              <div class="macth-text">
+                <img src="images/contest1 1.svg" alt="contest1">
+                <span>TEAM DELTA</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="macth-item" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+              <div class="macth-text text-center">
+                <h4>9:12</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+            <div class="macth-inner">
+              <div class="macth-text">
+                <span>TEAM DELTA</span>
+                <img src="images/contest2 1.svg"  alt="contest1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="macth-time" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+              <div class="macth-text">
+                <img src="images/contest3 1.svg" alt="contest1">
+                <span>TEAM DELTA</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="macth-item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+              <div class="macth-text text-center">
+                <h4>17:8</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="macth-inner" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+              <div class="macth-text">
+                <span>TEAM DELTA</span>
+                <img src="images/contest4 1.svg"  alt="contest1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video part end -->
+
+
+    <!-- top-game part start -->
+    <section id="sale" >
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-5">
+            <div class="sale-head">
+              <h2 data-aos="fade-down" data-aos-duration="2000" >TOP GAMES ON BLACK FRIDAY
+                SALE</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 col-sm-6">
+            <div class="sale-item">
+              <div class="sale-img" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1000" >
+                <img src="images/sale1 1.svg" class="w-100" alt="sale1">
+                <div class="sale-over">
+                  <a href="images/sale1 1.png"  data-lightbox="image-1" data-title="My caption">  <i class="fa-solid fa-plus"></i></a>
+                </div>
+              </div>
+              <div class="sale-text" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1000">
+                <h3>Horizon Zero Dawn™ Complet...</h3>
+                <p>Guerrilla Games</p>
+              </div>
+              <div class="sale-btm"  data-aos="zoom-in-down" data-aos-delay="400" data-aos-duration="1000">
+                  <div class=" sale-one">
+                    <p>-40%</p>
+                  </div>
+                  <div class=" sale-two">
+                    <p>$19.99</p>
+                  </div>
+                  <div class=" sale-three">
+                    <p>$7.99<p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="sale-item">
+              <div class="sale-img" data-aos="fade-up-right" data-aos-delay="200" data-aos-duration="1000">
+                <img src="images/sale3 1.svg" class="w-100" alt="sale">
+                <div class="sale-over">
+                  <a href="images/sale3 1.png"  data-lightbox="image-1" data-title="My caption">  <i class="fa-solid fa-plus"></i></a>
+                </div>
+              </div>
+              <div class="sale-text" data-aos="fade-up-left" data-aos-delay="200" data-aos-duration="1000">
+                <h3>Disciples: Liberation</h3>
+                <p>Frima Studio</p>
+              </div>
+              <div class="sale-btm"  data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">
+                  <div class=" sale-one">
+                    <p>-40%</p>
+                  </div>
+                  <div class=" sale-two">
+                    <p>$19.99</p>
+                  </div>
+                  <div class=" sale-three">
+                    <p>$7.99<p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="sale-item d-md-none d-lg-block">
+              <div class="sale-img" data-aos="fade-up-right" data-aos-delay="300" data-aos-duration="1000">
+                <img src="images/sale4 1.svg" class="w-100" alt="sale">
+                <div class="sale-over">
+                  <a href="images/sale4 1.png"  data-lightbox="image-1" data-title="My caption">  <i class="fa-solid fa-plus"></i></a>
+                </div>
+              </div>
+              <div class="sale-text" data-aos="fade-up-left" data-aos-delay="300" data-aos-duration="1000">
+                <h3>Horizon Zero Dawn™ Complet...</h3>
+                <p>Guerrilla Games</p>
+              </div>
+              <div class="sale-btm"  data-aos="zoom-in-down" data-aos-delay="200" data-aos-duration="1000">
+                  <div class=" sale-one">
+                    <p>-40%</p>
+                  </div>
+                  <div class=" sale-two">
+                    <p>$19.99</p>
+                  </div>
+                  <div class=" sale-three">
+                    <p>$7.99<p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="sale-item d-md-none d-lg-block">
+              <div class="sale-img" data-aos="fade-up-right" data-aos-delay="400" data-aos-duration="1000">
+                <img src="images/sale5 1.svg" class="w-100" alt="sale">
+                <div class="sale-over">
+                  <a href="images/sale5 1.png"  data-lightbox="image-1" data-title="My caption">  <i class="fa-solid fa-plus"></i></a>
+                </div>
+              </div>
+              <div class="sale-text" data-aos="fade-up-left" data-aos-delay="400" data-aos-duration="1000">
+                <h3>Industries of Titan</h3>
+                <p>Brace Yourself Games</p>
+              </div>
+              <div class="sale-btm"  data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000">
+                  <div class=" sale-one">
+                    <p>-40%</p>
+                  </div>
+                  <div class=" sale-two">
+                    <p>$19.99</p>
+                  </div>
+                  <div class=" sale-three">
+                    <p>$7.99<p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="cetalock-head">
+              <h3>Hancok Games Catalog</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row cetalog mt-3">
+          
+          <div class="col-lg-6 col-sm-6">
+            <div class="cetalog-text">
+              <h6>Choose Your Favourite Game</h6>
+              <h2>Explore hancok catalog for your next 
+                favorite game!</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus culpa ratione enim maiores 
+                  nisi cupiditate non nesciunt officia labore aut? Et, vero!</p>
+                  <div class="cetalog-btn">
+                    <a href="#">Browse All</a>
+                  </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/category-1 1.svg" alt="category">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/category-2 1.svg" alt="category">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/category-3 1.svg" alt="category">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/category-4 1.svg" alt="category">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/category-5 1.svg" alt="category">
+      </div>
+  
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- top-game part end -->
+
+
+    <!-- provide part start -->
+    <section id="provide" class="py-5"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="provide-head" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <h2>WE PROVIDE ALL GAMING ACCESORIES</h2>
+            </div>
+          </div>
+        </div>
+
+        <i class="fa-solid fa-arrow-left a"></i>
+        <i class="fa-solid fa-arrow-right b"></i>
+
+        <div class="row prov-slick mt-5">
+          <div class="col-lg-3">
+            <div class="prov-item" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" >
+              <div class="prov-img">
+                <h2>$95</h2>
+                <img src="images/gaming-product5 1.svg " class="w-100" alt="gaming">
+                <h4>Gaming Controller</h4>
+                <p>Add To Cart</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="prov-item"   data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+              <div class="prov-img">
+                <h2>$95</h2>
+                <img src="images/gaming-product2 1.svg " class="w-100" alt="gaming">
+                <h4>Gaming Controller</h4>
+                <p>Add To Cart</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="prov-item"  data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+              <div class="prov-img">
+                <h2>$95</h2>
+                <img src="images/gaming-product4 1.svg " class="w-100" alt="gaming">
+                <h4>Gaming Controller</h4>
+                <p>Add To Cart</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="prov-item"  data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+              <div class="prov-img">
+                <h2>$95</h2>
+                <img src="images/gaming-product5 1.svg " class="w-100" alt="gaming">
+                <h4>Gaming Controller</h4>
+                <p>Add To Cart</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="prov-item">
+              <div class="prov-img">
+                <h2>$95</h2>
+                <img src="images/gaming-product4 1.svg " class="w-100" alt="gaming">
+                <h4>Gaming Controller</h4>
+                <p>Add To Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- provide part end -->
+
+
+    <!-- team part start -->
+    <section id="team" >
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-5">
+            <div class="team-head" data-aos="fade-down" data-aos-duration="1000" >
+              <h2>MEET OUR PROFESSIONAL ELITE 
+                TEAM</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="team-itam" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" >
+              <div class="team-img">
+                <img src="images/team-1 1.svg" class="w-100" alt="team">
+                <div class="team-over"></div>
+                </div>
+                  <div class="team-up">
+                    <h2>CS:GO</h2>
+                  </div>
+                  <div class="team-btm">
+                      <div class="team-btm-text">
+                        <h4>Paladins</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                          elit. Ut elit tellus, luctus nec ullamcorper</p>
+                          <a href="#">Know more</a>
+                          <div class="team-icon text-end">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="team-itam"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" >
+              <div class="team-img">
+                <img src="images/team-2 1.svg" class="w-100" alt="team">
+                <div class="team-over"></div>
+                </div>
+                  <div class="team-up">
+                    <h2>CS:GO</h2>
+                  </div>
+                  <div class="team-btm">
+                      <div class="team-btm-text">
+                        <h4>Paladins</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                          elit. Ut elit tellus, luctus nec ullamcorper</p>
+                          <a href="#">Know more</a>
+                          <div class="team-icon text-end">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="team-itam mt-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+              <div class="team-img">
+                <img src="images/team-3 1.svg" class="w-100" alt="team">
+                <div class="team-over"></div>
+                </div>
+                  <div class="team-up">
+                    <h2>CS:GO</h2>
+                  </div>
+                  <div class="team-btm">
+                      <div class="team-btm-text">
+                        <h4>Paladins</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                          elit. Ut elit tellus, luctus nec ullamcorper</p>
+                          <a href="#">Know more</a>
+                          <div class="team-icon text-end">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="team-itam mt-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+              <div class="team-img">
+                <img src="images/team-4 1.svg" class="w-100" alt="team">
+                <div class="team-over"></div>
+                </div>
+                  <div class="team-up">
+                    <h2>CS:GO</h2>
+                  </div>
+                  <div class="team-btm">
+                      <div class="team-btm-text">
+                        <h4>Paladins</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                          elit. Ut elit tellus, luctus nec ullamcorper</p>
+                          <a href="#">Know more</a>
+                          <div class="team-icon text-end">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team part end -->
+
+
+    <!-- faq part start -->
+    <section id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="faq-head" data-aos="fade-right" data-aos-duration="1000" >
+              <h2>FREQUENTLY ASKED QUESTION “QUESTION & ANSWER”</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6 col-sm-6">
+            <div class="faq-itam"  data-aos="fade-up-right" data-aos-duration="1000" >
+              <div class="faq-text">
+                <h2>1</h2>
+                <h4>HOW TO DOWNLOAD THE GAME ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, iste, 
+                  sed error at adipisci repellat rem maiores provident voluptatem ipsum 
+                  autem fugiat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6  col-sm-6">
+            <div class="faq-itam" data-aos="fade-up-left" data-aos-duration="1000">
+              <div class="faq-text">
+                <h2>2</h2>
+                <h4>IS THERE ANY AGE RESTRICTIONS ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, iste, 
+                  sed error at adipisci repellat rem maiores provident voluptatem ipsum 
+                  autem fugiat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6  col-sm-6">
+            <div class="faq-itam d-md-none d-lg-block mt-5" data-aos="fade-up-right" data-aos-duration="1000">
+              <div class="faq-text">
+                <h2>3</h2>
+                <h4>HOW TO BECOME A TEAM MEMBER ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, iste, 
+                  sed error at adipisci repellat rem maiores provident voluptatem ipsum 
+                  autem fugiat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6  col-sm-6">
+            <div class="faq-itam d-md-none d-lg-block mt-5" data-aos="fade-up-left" data-aos-duration="1000">
+              <div class="faq-text">
+                <h2>4</h2>
+                <h4>IS THERE ANY REWARD FOR WINNERS ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, iste, 
+                  sed error at adipisci repellat rem maiores provident voluptatem ipsum 
+                  autem fugiat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
+        
+
+      </div>
+    </section>
+    
+    <!-- faq part end -->
+
+
+
+    <!-- contact part start -->
+
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-item">
+              <div class="contact-text">
+                <h2>subscribe us to get latest news in your inbox 
+                  from hancok community</h2>
+              </div>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- contact part end -->
+
+
+    <!-- footer part start -->
+      <footer id="footer" >
+
+  
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-sm-6">
+              <div class=" footer-logo" data-aos="fade-left"  data-aos-delay="100" data-aos-duration="1000">
+                <h2>Hancok</h2>
+            </div>
+            <div class="footer-text" data-aos="fade-left"  data-aos-delay="100" data-aos-duration="1000">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero 
+                officiis rem consectetur sunt cupiditate eius obcaecati, culpa, 
+                aspernatur aperiam id.</p>
+            </div>
+
+            <div class="footer-icon">
+              <a href="#"><i class="fa-brands fa-facebook-f"  ></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in" ></i></a>
+              <a href="#"><i class="fa-brands fa-twitter" ></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            </div>
+            <div class="col-lg-2 col-sm-3">
+                <div class="footer-link" data-aos="fade-left"  data-aos-delay="200" data-aos-duration="1000">
+                  <h4>LINKS</h4> 
+                  <h4><a href="#">Home</a></h4>
+                  <h4><a href="#">About</a></h4>
+                  <h4><a href="#">Tournament</a></h4>
+                  <h4><a href="#">Contact</a></h4>
+                </div>
+               
+            </div>
+            <div class="col-lg-2 col-sm-3 ">
+                <div class="footer-link" data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000">
+                  <h4>TEAMS</h4> 
+                  <h4><a href="#">PALADINS</a></h4>
+                  <h4><a href="#">CS:GO</a></h4>
+                  <h4><a href="#">DOTA 2</a></h4>
+                  <h4><a href="#">VALORANT</a></h4>
+                </div>
+               
+            </div>
+            <div class="col-lg-3">
+                <div class="footer-link" >
+                  <h4>GALLERY</h4> 
+                    <div class="footer-img">
+                      <img src="images/gal1 1.svg" alt="gal">
+                      <img src="images/gal2 1.svg" alt="gal">
+                      <img src="images/gal3 1.svg" alt="gal">
+                      <img src="images/gal4 1.svg" class="mt-1" alt="gal">
+                      <img src="images/gal5 1.svg" class="mt-1" alt="gal">
+                      <img src="images/gal6 1.svg" class="mt-1" alt="gal">
+                    </div>
+                </div>
+               
+            </div>
+          </div>
+    
+        </div>
+      </footer>
+    <!-- footer part end -->
+
+
+    <!-- back-to-top start  -->
+
+    <div class="backto-top">
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+
+    <!-- back-to-top end  -->
+  
+
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/kursor.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

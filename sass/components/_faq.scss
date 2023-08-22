@@ -1,0 +1,117 @@
+#faq{
+    background-color: #121212;
+    padding-top: 80px;
+    padding-bottom: 200px;
+    position: relative;
+    z-index: -1;
+    &::after{
+        position: absolute;
+        content: "";
+        top: 31%;
+        left: 48%;
+        width: 1px;
+        height: 48%;
+        background-color: #666666;
+        transform: translateX(-50%);
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        top: 52%;
+        left: 111px;
+        width: 80%;
+        height: 1px;
+        background-color: #666666;
+    }
+
+}
+
+
+.faq-head{
+    h2{
+        font-family: 'Barlow Condensed';
+        color: #fff;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 46px;
+        letter-spacing: 0.1em;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 9px;
+            right: 70px;
+            width: 100px;
+            height: 2px;
+            background-color: #FF4655;
+        }
+    }
+
+}
+
+
+
+
+.faq-itam{
+    &:hover  .faq-text{
+        h4{
+            color: #FF4655;
+            transition: 0.5s ease;
+        }
+    }
+    .faq-text{
+        margin: 0 10px;
+        position: relative;
+        h2{
+            position: absolute;
+            top: 7px;
+            left: -10px;
+            color: #fff;
+            height: 40px;
+            width: 40px;
+            background-color: #FF4655;
+            text-align: center;
+            line-height: 40px;
+        }
+        h4{
+            margin-left: 50px;
+            font-family: 'Barlow Condensed';
+            color: #fff;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+        }
+        p{
+            margin: 0 50px;
+           
+            color: #666666;
+            font-family: 'Oswald';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+
+.faq-bottom{
+    padding: 20px 0;
+    background-color: #FF4655;
+    position: absolute;
+}
+
+.faq-b-t{
+    h4{
+        font-family: 'Barlow Condensed';
+color: #fff;
+font-weight: 600;
+font-size: 30px;
+line-height: 48px;
+text-transform: uppercase;
+    }
+}
+
+
+
+
+

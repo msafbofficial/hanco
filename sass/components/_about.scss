@@ -1,0 +1,128 @@
+#about{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #121212;
+}
+
+.about-head{
+    h2{
+        color: #fff;
+        font-family: 'Oswald';
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 56px;
+        letter-spacing: 0.07em;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 11px;
+            left: 220px;
+            width: 120px;
+            height: 2px;
+            background-color: #FF4655;
+        }
+    }
+}
+
+.about-text{
+        margin-left: 80px;
+    h3{
+        font-family: 'Oswald';
+        color: #fff;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 40px;
+    }
+    h5{
+        font-family: 'Barlow Condensed';
+        color: #fff;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: -10px;
+        span{
+            margin: 0 10px;
+      
+            i{
+                color: #FF4655;
+                
+            }
+        }
+    }
+    
+
+    p{
+        font-family: 'Oswald';
+        color: #fff;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+    }
+  
+}
+
+.about-btn{
+    margin-left: 80px;
+
+    a{ position: relative;
+        color: #000;
+        padding: 13px 43px;
+        background-color: #fff;
+        span{
+          color: #000;
+          position: absolute;
+          top: 2px;
+          left: 80px;
+          padding: 13px 43px;
+          &:hover{
+            color: #fff;
+            transition: 0.5s ease;
+          }
+        }
+
+        &:hover{
+            background-color: #FF4655;
+            color: #fff;
+            transition: 0.5s ease;
+        }
+    }
+}
+
+.about-item{
+    
+    .about-btm{
+        .about-btm-tex{
+           padding: 10px 55px;
+           background-color: #212121;
+           border-top-right-radius: 50px;
+           border-bottom-left-radius: 50px;
+            h2{
+                color: #fff;
+                position: relative;
+                font-family: 'Barlow Condensed';
+                font-weight: 600;
+                font-size: 60px;
+                letter-spacing: 0.03em;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    bottom: 9px;
+                    right: 0;
+                    width: 12px;
+                    height: 12px;
+                    background-color: #FF4655;
+                    border-radius: 50%;
+                }
+            }
+            p{
+                color: #fff;
+                font-family: 'Oswald';
+                font-weight: 300;
+                font-size: 17px;
+                letter-spacing: 0.02em;
+            }
+           
+        }
+    }
+}

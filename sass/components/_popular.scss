@@ -1,0 +1,83 @@
+#popilar{
+    background-color: #191919;
+    
+
+    .popular-head{
+        h2{
+            font-family: 'Barlow Condensed';
+            font-weight: 600;
+            font-size: 38px;
+            line-height: 46px;
+            text-align: right;
+            letter-spacing: 0.07em;
+            color: #FFFFFF;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: 8px;
+                right: 124px;
+                width: 100px;
+                height: 2px;
+                background-color: #FF4655;
+            }
+        }
+    }
+
+
+
+
+.populer-icon{
+    position: relative;
+    .next{
+        position: absolute;
+        contain: "";
+        bottom: -212px;
+        right: -56px;
+        height: 40px;
+        width: 40px;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        color: #FFFFFF;
+        z-index: 11;
+        cursor: pointer;
+        &:hover{
+    
+            background-color: #FF4655;
+            transition: 0.5s ease;
+            border: 1px solid transparent;
+        }
+    }
+    .prev{
+        position: absolute;
+        contain: "";
+        bottom: -290px;
+        right: -56px;
+        height: 40px;
+        width: 40px;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        color: #FFFFFF;
+        z-index: 11;
+        cursor: pointer;
+        &:hover{
+    
+            background-color: #FF4655;
+            transition: 0.5s ease;
+            border: 1px solid transparent;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+}

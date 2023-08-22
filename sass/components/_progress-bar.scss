@@ -1,0 +1,19 @@
+
+// Progress Bar
+
+.progress-bar-wrapper {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height:
+    2px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #FF4655;
+    width: 0;
+    // make animation less jittery
+    transition: width .05s ease 0s;
+  }

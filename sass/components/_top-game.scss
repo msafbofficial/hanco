@@ -1,0 +1,212 @@
+#sale{
+  background-color: #191919; 
+  padding: 80px 0; 
+}
+
+.sale-head{
+    h2{
+            color: #fff;
+            font-family: 'Barlow Condensed';
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 46px;
+            text-align: right;
+            letter-spacing: 0.07em;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: 10px;
+                right: 87px;
+                width: 100px;
+                height: 2px;
+                background-color: #FF4655;
+            }
+    }
+}
+
+.sale-item{
+    position: relative;
+    .sale-img{
+        &:hover .sale-over{
+            opacity: 1;
+            transition: 0.5s ease;
+        }
+    }
+    .sale-over{
+        position: absolute;
+        content: "";
+        top: 7px;
+        right: 9px;
+        width: 30px;
+        height: 30px;
+        background-color: #000;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        opacity: 0;
+
+        i{
+            color: #fff;
+        }     
+    }
+.sale-text{
+        h3{
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            color: #fff;
+            letter-spacing: 0.07em;
+            
+        }
+        p{
+            
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1em;
+                color: #666666;
+        }
+    }
+
+.sale-btm{
+    display: flex;
+    
+    .sale-one{
+       p{
+       padding: 5px 10px;
+       background-color: #FF4655;
+       color: #fff;
+       font-family: 'Oswald';
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 24px;
+       }
+    }
+    .sale-two{
+        p{
+            padding: 5px 10px;
+            font-family: 'Oswald';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #666666;
+            letter-spacing: 0.06em;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                top: 18px;
+                left: 15px;
+                width: 61%;
+                height: 1px;
+                background-color: #666666;
+            }
+        }
+    }
+
+    .sale-three{
+             padding: 5px 0px;
+            font-family: 'Oswald';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #666666;
+            letter-spacing: 0.06em;
+    }
+}
+
+}
+
+.cetalock-head{
+    h3{
+        font-family: 'Barlow Condensed';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+    }
+}
+
+
+.cetalog{
+    background-color: #212121;
+    padding: 42px 0;
+}
+
+
+.cetalog-text{
+    margin: 0 20px;
+    h6{
+        font-family: 'Oswald';
+        color: #FF4655;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+    }
+
+    h2{
+        font-family: 'Barlow Condensed';
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+    }
+    
+    p{
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+    }
+
+
+}
+
+
+.cetalog-btn{
+    margin-top: 50px;
+    a{
+        padding: 13px 13px;
+        background-color: #000;
+        color: #fff;
+        &:hover{
+            background-color: #FF4655;
+            transition: 0.5s ease;
+        }
+    }
+}
+
+
+.swiper {
+    width: 240px;
+    height: 320px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+
